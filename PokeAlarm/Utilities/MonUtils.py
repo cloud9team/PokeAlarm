@@ -56,7 +56,7 @@ def get_move_id(move_name):
 # Returns the gender symbol of a pokemon:
 def get_gender_sym(gender):  # TODO - support other languages
     gender = str(gender).lower()
-    if gender == '?':
+    if (gender == '?') or (gender == '0'):
         return '?'
     if gender == '1' or gender == 'male':
         return u'\u2642'  # male symbol
